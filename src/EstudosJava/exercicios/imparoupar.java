@@ -1,4 +1,4 @@
-package exercicios;
+package EstudosJava.exercicios;
 
 public class imparoupar {
     public static void main(String[] args) {

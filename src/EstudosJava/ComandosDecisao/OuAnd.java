@@ -1,4 +1,4 @@
-package ComandosDecisao;
+package EstudosJava.ComandosDecisao;
 
 import javax.swing.*;
 

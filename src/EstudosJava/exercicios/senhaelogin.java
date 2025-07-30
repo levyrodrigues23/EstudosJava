@@ -1,4 +1,4 @@
-package exercicios;
+package EstudosJava.exercicios;
 
 public class senhaelogin {
     public static void main(String[] args) {

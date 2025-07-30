@@ -1,4 +1,4 @@
-package ComandosDecisao;
+package EstudosJava.ComandosDecisao;
 
 public class Funcao_IF {
     public static void main(String[] args){
