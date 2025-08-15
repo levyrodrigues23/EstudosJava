@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/Java Estudos.iml" filepath="$PROJECT_DIR$/Java Estudos.iml" />
       <module fileurl="file://$PROJECT_DIR$/PraticandoJava/Livro/Livro.iml" filepath="$PROJECT_DIR$/PraticandoJava/Livro/Livro.iml" />
       <module fileurl="file://$PROJECT_DIR$/PraticandoJava/PraticandoJava.iml" filepath="$PROJECT_DIR$/PraticandoJava/PraticandoJava.iml" />
+      <module fileurl="file://$PROJECT_DIR$/heranca_Polimorfismo/heranca_Polimorfismo.iml" filepath="$PROJECT_DIR$/heranca_Polimorfismo/heranca_Polimorfismo.iml" />
     </modules>
   </component>
 </project>

@@ -4,9 +4,10 @@ public class livro {
     private double valor;
     private String isbn;
     private Autorr autor;
+    private boolean impresso;
 
-
-    public livro(){
+// tem algo chamado overloaded, que é o ato de eu poder ter varios construtores dentro da mesma classe
+    public livro(Autorr autor){
         // eu criei esse construtor vazio porque ele será necessary para a instância que vou realizar posteriormente
     }
 
@@ -16,7 +17,16 @@ public class livro {
         this.descricao = descricao;
         this.valor = valor;
         this.isbn = isbn;
+        this.impresso = true;
     }
+
+    public boolean AplicaDescontoDe(double porcentagem){
+        if (porcentagem > 0.3) {
+            return false;
+        }
+        this.valor -= this.valor * porcentagem;
+        return true;
+    };
 
     boolean temAutor(){
         return this.autor != null;
@@ -74,26 +84,29 @@ public class livro {
 
     }
 
+
     public static void main(String[] args){
+
             Autorr autor = new Autorr();
             autor.setNome("levy");
             autor.setEmail("levy.com");
             autor.setCpf("123456789");
 
 
-            livro livroo = new livro();
+            livro livroo = new livro(autor);
             livroo.setNome("java ");
             livroo.setDescricao("javaaaaaaa");
             livroo.setAutor(autor);
             livroo.setIsbn("123456789");
             livroo.setValor(464);
 
-            System.out.println(livroo.getNome());
-            System.out.println(livroo.getIsbn());
-            System.out.println(autor.getNome());
-            System.out.println(autor.getCpf());
-            System.out.println(autor.getEmail());
+
+
             livroo.mostrarDetalhes();
+
+            Ebook ebook = new Ebook(autor);
+            ebook.setNome("levy");
+            System.out.println(ebook.getNome());
     }
 
 
