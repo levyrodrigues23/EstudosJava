@@ -2,7 +2,7 @@ public class RegrasDeDesconto {
     public static void main(String[] args) {
         Autorr autor = new Autorr();
         autor.setNome("José Levy");
-        livro livrooo = new livro(autor);
+        livro livrooo = new MiniLivro(autor);
         livrooo.setValor(66.66);
 
         if(!livrooo.AplicaDescontoDe(0.3)){

@@ -1,4 +1,4 @@
-public class livro {
+public abstract  class livro {
     private String nome;
     private String descricao;
     private double valor;
@@ -20,13 +20,8 @@ public class livro {
         this.impresso = true;
     }
 
-    public boolean AplicaDescontoDe(double porcentagem){
-        if (porcentagem > 0.3) {
-            return false;
-        }
-        this.valor -= this.valor * porcentagem;
-        return true;
-    };
+    public abstract boolean AplicaDescontoDe(double porcentagem);
+    //tornei essa classe aqui abstrata, ou seja, obrigatoriamente eu terei que chamar nas classes filhas esse metodo aqui ;)
 
     boolean temAutor(){
         return this.autor != null;
@@ -93,7 +88,7 @@ public class livro {
             autor.setCpf("123456789");
 
 
-            livro livroo = new livro(autor);
+            livro livroo = new LivroFisico(autor);
             livroo.setNome("java ");
             livroo.setDescricao("javaaaaaaa");
             livroo.setAutor(autor);
